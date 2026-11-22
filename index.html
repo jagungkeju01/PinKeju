@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111111"><meta name="description" content="K VÉNARI — pilihan streetwear kontemporer.">
+<title>K VÉNARI — Streetwear</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="components.css"><link rel="stylesheet" href="responsive.css">
+<script src="products.js" defer></script><script src="app.js" defer></script><script src="cart.js" defer></script><script src="home.js" defer></script>
+</head><body><div class="announcement">K VÉNARI — STREETWEAR KONTEMPORER</div>
+<header class="site-header">
+  <button class="menu-dots" id="menu-open" aria-label="Buka navigasi"><span></span><span></span><span></span></button>
+  <a class="wordmark header-wordmark" href="index.html">K VÉNARI<span>STREETWEAR</span></a>
+  <div class="header-actions">
+    <button class="icon-button" id="theme-toggle" aria-label="Ubah tema">◐</button>
+    <button class="bag-link" id="bag-open" aria-label="Buka daftar favorit">DAFTAR FAVORIT <span id="bag-count">0</span></button>
+  </div>
+</header>
+<div class="menu-overlay" id="menu-overlay" aria-hidden="true">
+  <nav class="menu-panel">
+    <div class="menu-panel-head"><span>MENU</span><button id="menu-close" aria-label="Tutup menu">×</button></div>
+    <a href="index.html">BERANDA <span>↗</span></a>
+    <a href="shop.html">SEMUA PRODUK <span>↗</span></a>
+    <a href="shop.html?category=Sneakers">SEPATU <span>↗</span></a>
+    <a href="shop.html?category=Apparel">PAKAIAN <span>↗</span></a>
+    <a href="shop.html?category=Accessories">AKSESORI <span>↗</span></a>
+    <a href="checkout.html">PEMBAYARAN <span>↗</span></a>
+  </nav>
+</div><main class="home-page">
+
+<section class="home-editorial section-wide">
+  <div class="campaign-gallery" id="campaign-gallery">
+    <a class="gallery-card gallery-card-main" href="shop.html" aria-label="Kampanye utama — In Motion. Jelajahi koleksi"><img src="Campaign.jpg" alt="Kampanye utama K VÉNARI — In Motion" fetchpriority="high"><span class="gallery-shade"></span><span class="gallery-label"><strong>IN MOTION.</strong><em>PILIHAN STREETWEAR TERBARU</em></span><span class="campaign-explore-square">JELAJAHI<br>KOLEKSI <b>↗</b></span><span class="campaign-main-index">01 <i></i> 04</span></a>
+    <a class="gallery-card gallery-card-tall" href="shop.html?category=Apparel"><img src="Campaign2.jpg" alt="Kampanye pakaian K VÉNARI" loading="lazy"><span class="gallery-shade"></span><span class="gallery-label"><small>KAMPANYE 02</small><strong>GAYA HARIAN.</strong><em>JELAJAHI PAKAIAN ↗</em></span></a>
+    <a class="gallery-card gallery-card-wide" href="shop.html?category=Sneakers"><img src="Campaign 3.jpg" alt="Kampanye sepatu K VÉNARI" loading="lazy"><span class="gallery-shade"></span><span class="gallery-label"><small>KAMPANYE 03</small><strong>LANGKAH BARU.</strong><em>JELAJAHI SEPATU ↗</em></span></a>
+    <a class="gallery-card gallery-card-four" href="shop.html"><img src="Campaign 4.jpg" alt="Editorial streetwear K VÉNARI" loading="lazy"><span class="gallery-shade"></span><span class="gallery-label"><small>KAMPANYE 04</small><strong>KUASAI MOMEN.</strong><em>LIHAT KOLEKSI ↗</em></span></a>
+  </div>
+  <div class="gallery-controls"><span id="gallery-status">01 — 04 / KAMPANYE DIPILIH</span><div><button type="button" id="gallery-prev" aria-label="Kampanye sebelumnya">←</button><button type="button" id="gallery-next" aria-label="Kampanye berikutnya">→</button></div></div>
+</section>
+
+<section class="home-featured section-wide">
+  <div class="section-heading home-section-heading"><div><p class="eyebrow">PILIHAN UNTUKMU</p><h2>Pilihan unggulan.</h2></div><a class="text-link dark-link" href="shop.html">LIHAT SEMUA PRODUK ↗</a></div>
+  <div class="home-featured-grid" id="home-featured-grid" aria-live="polite"><p class="loading-copy">Memuat produk pilihan…</p></div>
+</section>
+
+<!-- BANNER PROMO SEKUNDER: tampil setelah produk unggulan, bukan sebagai hero utama -->
+<section class="home-hero-wide home-secondary-banner" aria-label="Banner musiman K VÉNARI">
+  <img class="hero-banner" src="Banner.jpg" alt="Banner kampanye streetwear K VÉNARI" fetchpriority="high">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">K VÉNARI / KOLEKSI MUSIM INI</p>
+    <h2>UNTUK<br><span>GAYA HARIANMU.</span></h2>
+    <p>Streetwear pilihan. Ikon keseharian. Gaya khasmu.</p>
+  </div>
+  <div class="hero-index"><span>01</span><span class="hero-index-line"></span><span>04</span></div>
+</section>
+
+<section class="category-tiles section-wide">
+  <a class="category-tile category-tile-sneakers" href="shop.html?category=Sneakers"><img src="Adidas Samba Og White1-Sneakers.jpg" alt="Koleksi sepatu" loading="lazy"><span><small>01 / SEPATU</small><strong>SEPATU</strong><em>Jelajahi koleksi ↗</em></span></a>
+  <a class="category-tile category-tile-apparel" href="shop.html?category=Apparel"><img src="ADLV Teddy Bear1-Tshirt.jpg" alt="Koleksi pakaian" loading="lazy"><span><small>02 / PAKAIAN</small><strong>PAKAIAN</strong><em>Jelajahi koleksi ↗</em></span></a>
+  <a class="category-tile category-tile-accessories" href="shop.html?category=Accessories"><img src="Mitchell & Ness Denver Nuggets-Cap.jpg" alt="Koleksi topi dan aksesori" loading="lazy"><span><small>03 / AKSESORI</small><strong>AKSESORI</strong><em>Jelajahi koleksi ↗</em></span></a>
+</section>
+
+<section class="brand-note section-wide">
+  <div class="brand-note-logo"><img src="Logo Website.jpg" alt="Logo merek K VÉNARI" loading="lazy"><div class="brand-icon-row"><img src="icon1.jpg" alt="Simbol K VÉNARI" loading="lazy"><img src="icon2.jpg" alt="Ikon merek K VÉNARI" loading="lazy"></div></div>
+  <div class="brand-note-copy"><p class="eyebrow">TENTANG K VÉNARI</p><h2>Gaya adalah pilihan pribadi.<br><span>Jadikan ciri khasmu.</span></h2><p>K VÉNARI menghadirkan pilihan streetwear, grafis ekspresif, dan sepatu dalam satu koleksi terkurasi. Jelajahi koleksi dan temukan gaya yang paling mewakilimu.</p><a class="button button-dark" href="shop.html">TEMUKAN PILIHANMU ↗</a></div>
+</section>
+
+
+
+</main><footer class="site-footer">
+  <div class="footer-main">
+    <div><a class="wordmark footer-wordmark" href="index.html">K VÉNARI<span>STREETWEAR</span></a><p>Pilihan gaya untuk menemani keseharian.</p></div>
+    <div class="footer-column"><strong>JELAJAHI</strong><a href="index.html">Beranda</a><a href="shop.html">Semua produk</a><a href="shop.html?category=Sneakers">Sepatu</a><a href="shop.html?category=Apparel">Pakaian</a></div>
+    <div class="footer-column"><strong>IKUTI KAMI</strong><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok ↗</a></div>
+    <div class="footer-column"><strong>BANTUAN</strong><a href="checkout.html">Belanja & pembayaran</a><a href="https://wa.me/6289670329456" target="_blank" rel="noopener">Hubungi melalui WhatsApp ↗</a></div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="year"></span> K VÉNARI Streetwear</span><span>SEPATU · PAKAIAN · AKSESORI</span><span>INDONESIA</span></div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="bag-drawer" id="bag-drawer" aria-hidden="true"><section class="bag-panel" role="dialog" aria-modal="true" aria-label="Daftar favorit"><div class="bag-panel-head"><h2>Daftar favorit <span id="drawer-count">(0)</span></h2><button class="bag-close" id="bag-close" aria-label="Tutup keranjang">×</button></div><div id="bag-items"></div><div class="bag-footer" id="bag-footer"></div></section></div></body></html>

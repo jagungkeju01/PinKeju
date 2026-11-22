@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111111"><meta name="description" content="Jelajahi koleksi streetwear K VÉNARI: sepatu, pakaian, dan aksesori pilihan.">
+<title>Belanja — K VÉNARI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="components.css"><link rel="stylesheet" href="responsive.css">
+<script src="products.js" defer></script><script src="app.js" defer></script><script src="cart.js" defer></script><script src="shop.js" defer></script>
+</head><body><div class="announcement">K VÉNARI — STREETWEAR KONTEMPORER</div>
+<header class="site-header">
+  <button class="menu-dots" id="menu-open" aria-label="Buka navigasi"><span></span><span></span><span></span></button>
+  <a class="wordmark header-wordmark" href="index.html">K VÉNARI<span>STREETWEAR</span></a>
+  <div class="header-actions">
+    <button class="icon-button" id="search-toggle" aria-label="Cari produk">⌕</button>
+    <button class="icon-button" id="theme-toggle" aria-label="Ubah tema">◐</button>
+    <button class="bag-link" id="bag-open" aria-label="Buka daftar favorit">DAFTAR FAVORIT <span id="bag-count">0</span></button>
+  </div>
+</header>
+<div class="search-panel" id="search-panel" hidden><input id="search-input" type="search" placeholder="Cari nama produk atau kategori..." aria-label="Cari produk"><button id="search-close" class="icon-button" aria-label="Tutup pencarian">×</button></div>
+<div class="menu-overlay" id="menu-overlay" aria-hidden="true"><nav class="menu-panel">
+  <div class="menu-panel-head"><span>NAVIGASI</span><button id="menu-close" aria-label="Tutup menu">×</button></div>
+  <a href="index.html">BERANDA <span>↗</span></a><a href="shop.html">SEMUA PRODUK <span>↗</span></a>
+  <a href="shop.html?category=Sneakers">SEPATU <span>↗</span></a><a href="shop.html?category=Apparel">PAKAIAN <span>↗</span></a>
+  <a href="shop.html?category=Accessories">AKSESORI <span>↗</span></a><a href="checkout.html">PEMBAYARAN <span>↗</span></a>
+</nav></div>
+<main><section class="content-view shop-page">
+<div class="breadcrumb"><a href="index.html">Beranda</a> / Belanja</div>
+<div class="section-heading shop-heading"><div><p class="eyebrow">PILIH GAYA YANG MEWAKILIMU</p><h1>Koleksi K VÉNARI</h1><p class="shop-intro">Jelajahi sepatu, pakaian, dan aksesori. Produk dengan beberapa foto ditampilkan lebih dahulu agar detailnya mudah dilihat.</p></div><span class="result-count" id="result-count"></span></div>
+<div class="shop-toolbar"><div class="category-filters" aria-label="Filter kategori produk">
+<button class="filter-chip active" data-category="All">Semua produk</button><button class="filter-chip" data-category="Sneakers">Sepatu</button><button class="filter-chip" data-category="Apparel">Pakaian</button><button class="filter-chip" data-category="T-shirts">Kaos</button><button class="filter-chip" data-category="Hoodies">Hoodie</button><button class="filter-chip" data-category="Sweaters">Sweater</button><button class="filter-chip" data-category="Jackets">Jaket</button><button class="filter-chip" data-category="Jerseys">Jersey</button><button class="filter-chip" data-category="Pants">Celana</button><button class="filter-chip" data-category="Accessories">Topi & aksesori</button>
+</div><label class="sort-label" for="sort-select">Urutkan <select id="sort-select" aria-label="Urutkan produk"><option value="featured">Pilihan unggulan</option><option value="images">Foto terbanyak</option><option value="name-asc">Nama: A–Z</option><option value="price-asc">Harga: terendah</option><option value="price-desc">Harga: tertinggi</option></select></label></div>
+<div class="shop-results-note" id="shop-results-note">Koleksi diurutkan berdasarkan jumlah foto produk.</div>
+<div class="product-grid" id="shop-grid"></div><p class="empty-state" id="empty-state" hidden>Produk tidak ditemukan. Coba kata kunci atau kategori lain.</p>
+</section></main>
+<footer class="site-footer"><div class="footer-main">
+<div><a class="wordmark footer-wordmark" href="index.html">K VÉNARI<span>STREETWEAR</span></a><p>Pilihan gaya untuk menemani keseharian.</p></div>
+<div class="footer-column"><strong>JELAJAHI</strong><a href="index.html">Beranda</a><a href="shop.html">Semua produk</a><a href="shop.html?category=Sneakers">Sepatu</a><a href="shop.html?category=Apparel">Pakaian</a></div>
+<div class="footer-column"><strong>IKUTI KAMI</strong><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok ↗</a></div>
+<div class="footer-column"><strong>BANTUAN</strong><a href="checkout.html">Belanja & pembayaran</a><a href="https://wa.me/6289670329456" target="_blank" rel="noopener">Hubungi melalui WhatsApp ↗</a></div>
+</div><div class="footer-bottom"><span>© <span id="year"></span> K VÉNARI Streetwear</span><span>SEPATU · PAKAIAN · AKSESORI</span><span>INDONESIA</span></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div><div class="bag-drawer" id="bag-drawer" aria-hidden="true"><section class="bag-panel" role="dialog" aria-modal="true" aria-label="Daftar favorit"><div class="bag-panel-head"><h2>Daftar favorit <span id="drawer-count">(0)</span></h2><button class="bag-close" id="bag-close" aria-label="Tutup daftar favorit">×</button></div><div id="bag-items"></div><div class="bag-footer" id="bag-footer"></div></section></div></body></html>
